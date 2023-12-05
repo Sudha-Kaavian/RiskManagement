@@ -13,13 +13,13 @@ module.exports = cds.service.impl(async function() {
 
                 switch (risk.prio_code) {
                     case 'H':
-                        risk.PrioCriticality = 1;
+                        risk.PrioCriticality = 3;
                         break;
                     case 'M':
-                        risk.PrioCriticality = 2;
+                        risk.PrioCriticality = 1;
                         break;
                     case 'L':
-                        risk.PrioCriticality = 3;
+                        risk.PrioCriticality = 1;
                         break;
                     default:
                         break;
@@ -27,7 +27,6 @@ module.exports = cds.service.impl(async function() {
             });
         } catch (error) {
             console.log(error)
-            console.log(error.message)
         }
     });
 
