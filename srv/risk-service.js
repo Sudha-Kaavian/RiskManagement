@@ -16,7 +16,7 @@ module.exports = cds.service.impl(async function() {
                         risk.PrioCriticality = 3;
                         break;
                     case 'M':
-                        risk.PrioCriticality = 1;
+                        risk.PrioCriticality = 2;
                         break;
                     case 'L':
                         risk.PrioCriticality = 1;
